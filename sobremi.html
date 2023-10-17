@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio de Desarrollador</title>
+</head>
+
+<body>
+    <header class="bg-dark text-white py-4">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Hola</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mentorias.html">Mentorías</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cursos.html">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sobremi.html">Sobre Mí</a></li>
+
+                <button id="modoNocturnoBtn" class="theme-toggle"><svg width="32" height="32" viewBox="0 0 32 32"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 14.0001C9.99997 13.0093 10.2453 12.034 10.7141 11.1611C11.1829 10.2883 11.8605 9.54507 12.6865 8.99791C13.5125 8.45076 14.4611 8.11667 15.4477 8.02547C16.4342 7.93428 17.428 8.08881 18.3403 8.47529C19.2526 8.86176 20.055 9.46814 20.6758 10.2403C21.2967 11.0124 21.7166 11.9263 21.8982 12.9003C22.0798 13.8743 22.0174 14.8781 21.7165 15.8221C21.4156 16.766 20.8856 17.6208 20.1739 18.3101C19.9709 18.5061 19.8149 18.7101 19.7209 18.9291L18.9589 20.698C18.9202 20.7877 18.8562 20.8641 18.7746 20.9177C18.693 20.9714 18.5975 21 18.4999 21H13.5C13.4022 21.0002 13.3064 20.9717 13.2247 20.918C13.1429 20.8643 13.0787 20.7879 13.04 20.698L12.279 18.9281C12.17 18.6943 12.0161 18.4843 11.826 18.3101C11.2476 17.7512 10.7878 17.0816 10.4741 16.341C10.1604 15.6005 9.99912 14.8044 10 14.0001V14.0001ZM13 22.5C13 22.3674 13.0526 22.2402 13.1464 22.1465C13.2402 22.0527 13.3674 22 13.5 22H18.4999C18.6325 22 18.7597 22.0527 18.8535 22.1465C18.9472 22.2402 18.9999 22.3674 18.9999 22.5C18.9999 22.6326 18.9472 22.7598 18.8535 22.8536C18.7597 22.9473 18.6325 23 18.4999 23L18.2759 23.447C18.1929 23.6131 18.0653 23.7528 17.9074 23.8504C17.7495 23.9481 17.5676 23.9999 17.3819 24H14.6179C14.4323 23.9999 14.2503 23.9481 14.0924 23.8504C13.9345 23.7528 13.8069 23.6131 13.724 23.447L13.5 23C13.3674 23 13.2402 22.9473 13.1464 22.8536C13.0526 22.7598 13 22.6326 13 22.5Z">
+                        </path>
+                    </svg></button>
+
+            </ul>
+
+        </nav>
+    </header>
+    <style>
+        .proyecto {
+            width: 45%;
+            margin: 2.5%;
+            float: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+    <div class="container mt-5 text">
+
+        <div class="container mt-5">
+            <h2>Sobre Mí</h2>
+            <p>
+            <ul>
+                <li>
+                    <p>
+                        Mi nombre es Luis Hernando Soto Mesa, aunque también me conocen como el profe Luiguie.
+                        Soy un profesional multifacético, desempeñándome como profesor, programador web, líder de
+                        proyectos
+                        y
+                        emprendedor.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A lo largo de mi carrera, acumulo una amplia experiencia en diversas áreas.
+                        En mi faceta como profesor, he tenido el privilegio de compartir mis conocimientos en distintos
+                        entornos
+                        educativos. Trabajando en universidades y entidades del estado.
+                    </p>
+
+                </li>
+                <li>
+                    <p>
+                        Como analista programador, he tenido la oportunidad de aplicar mis habilidades técnicas en el
+                        mundo
+                        corporativo. Colaboro con empresas destacadas como Antares Colombia Ltda, COEX – Infinity Prime
+                        y la
+                        Fundación ToolBox. En estas experiencias, desarrollo soluciones tecnológicas y participo en
+                        proyectos innovadores en todas las fases de desarrollo.
+
+                    </p>
+
+                </li>
+            </ul>
+
+            </p>
+            <hr>
+            <h2>Yo soy</h2>
+
+            <div class="container mt-5 text-center ">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="luis.jpeg" alt="Banner" style="max-width: 40%; border-radius: 20%;">
+
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <p><b>Luis Hernando Soto Mesa</b></p>
+                            <li>Profe Luiguie</li>
+                            <li>Nací en Colombia</li>
+                            <li>Descarga mi CV</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://luishernandosoto.files.wordpress.com/2020/07/0-1.jpg" alt="Banner"
+                            style="max-width: 100%; border-radius: 20%;">
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2>Acerca de </h2>
+            <p>
+                Desde 2004 tengo experiencia en el área del desarrollo web y la educación. Imparto clases, conferencias
+                y
+                capacitaciones para personas, empresas, instituciones educativas y comunidades en Internet.
+
+                También colaboro en proyectos como Freelance FullStack. Estoy más orientado al BackEnd utilizando
+                diferentes
+                tecnologías como JAVA, PHP Y FRAMEWORK LARAVEL Y SPRINGBOOT, pero también hago FrontEnd.
+
+                También cuento con experiencia en el área de Social Media, Marketing de Contenidos, SEO, Desarrollo de
+                Marca
+                Personal y Creación de Contenidos Digitales.
+
+            </p>
+
+            <hr>
+            <h1>Mis Proyectos en GitHub</h1>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/LUINFO89/CRUD-LYVOS-LARAVEL-PHP-COMPOSER-MYSQL">CRUD-LYVOS-LARAVEL-PHP-COMPOSER-MYSQL</a>: Plataforma para la administración de documentos y servicios. Actualizado recientemente.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/CRUD-DJANGO-PYTHON">CRUD-DJANGO-PYTHON</a>: CRUD trabajado en Django, usando Python. Actualizado el 26 de mayo de 2022.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/LYVOS">LYVOS</a>: Plataforma de pagos para el Colegio Guilford ubicado en Bogotá. Actualizado el 13 de julio de 2022.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Proyectos-LYVOS">Proyectos-LYVOS</a>: Proyectos en JavaScript. Actualizado el 30 de agosto de 2022.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Guia-Hoteles">Guia-Hoteles</a>: Página web desarrollada con Bootstrap en el curso de Coursera Guía Hotelera. Actualizado el 5 de diciembre de 2022.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/todoAPI">todoAPI</a>: REST API utilizando Java, Spring Boot, JPA y MySQL, proyecto de lista de tareas. Actualizado el 23 de diciembre de 2022.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/curso-java-spring-data-jpa">curso-java-spring-data-jpa</a>: Curso de Java Spring Data JPA. Actualizado el 15 de marzo.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/UniversidadJava2023">UniversidadJava2023</a>: Ruta de programación como desarrollador JAVA FULL STACK. Actualizado el 23 de abril.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Usuarios-SpringBoot-Hibernate">Usuarios-SpringBoot-Hibernate</a>: Sistema desarrollado en SpringBoot para llevar un control de empleados. Actualizado el 13 de junio.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/JAVA-SE-MYSQL">JAVA-SE-MYSQL</a>: Aprende cómo escribir consultas SQL desde Java. Actualizado hace 3 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Java-SE-Persistencia-de-Datos">Java-SE-Persistencia-de-Datos</a>: La persistencia de datos en un sistema de información utilizando una base de datos relacional. Actualizado hace 3 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Basico-de-Testing-Java">Basico-de-Testing-Java</a>: Crea funciones que hacen test de cada elemento de código que escribes. Actualizado hace 2 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Curso-Programación-Funcional-Java-SE">Curso-Programación-Funcional-Java-SE</a>: Java 8 introdujo el paradigma funcional con Lambdas. Actualizado hace 2 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Curso-de-Java-Spring-marketSPRING">Curso-de-Java-Spring-marketSPRING</a>: Proyecto desarrollado con el FRAMEWORK de Spring y con base de datos Postgres. Actualizado hace 2 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/Java-Spring-Data-JPA-Bases-de-Datos">Java-Spring-Data-JPA-Bases-de-Datos</a>: Desarrollo de la Base de Datos y API REST de Platzi Pizzería. Actualizado hace 2 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/LUINFO89">LUINFO89</a>: Proyecto Java. Actualizado hace 2 semanas.
+                </li>
+                <li>
+                    <a href="https://github.com/LUINFO89/E-wok-JAVA">E-wok-JAVA</a>: Proyecto Java. Actualizado la semana pasada.
+                </li>
+            </ul>
+        
+        
+            <hr>
+
+
+            <footer class="bg-dark text-white py-4">
+                <div class="container text-center">
+                    <h5>&copy; 2023 Luis Hernando Soto Mesa</h5>
+                    <a href="https://wa.me/3058119573" target="_blank">
+                        <button type="button" class="btn btn-primary">Enviar mensaje por WhatsApp</button>
+
+                    </a>
+
+                </div>
+            </footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script>
+            // Función para cambiar entre los modos diurno y nocturno
+            function cambiarModo() {
+                const body = document.body;
+                body.classList.toggle('modo-nocturno');
+            }
+
+            // Escucha el evento de clic en el botón y llama a la función cambiarModo
+            document.getElementById('modoNocturnoBtn').addEventListener('click', cambiarModo);
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* Fuente Ubuntu o Apple */
+body {
+    font-family: 'Ubuntu', 'Helvetica Neue', sans-serif; /* Para Ubuntu */
+    /*font-family: 'Apple', 'Helvetica Neue', sans-serif;
+    /* Para Apple */
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    color: #333;
+    /* Texto gris oscuro */
+    font-size: 20px;
+
+}
+
+/* Estilos para el modo diurno (por defecto) */
+
+
+/* Estilos para el modo nocturno */
+body.modo-nocturno {
+    background-color: #333;
+    /* Fondo oscuro similar a modo nocturno */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.modo-nocturno {
+    background-color: #333;
+    /* Fondo oscuro similar a modo nocturno */
+    color: #fff;
+    /* Texto blanco */
+}
+
+
+/* Estilos para los colores inspirados en Ubuntu o Apple */
+
+
+header {
+    background-color: #333;
+    /* Barra de navegación negra */
+    
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Enlaces de navegación en blanco */
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+    /* Cambio de color al pasar el mouse (similar a Ubuntu) */
+}
+
+p {
+    text-align: justify;
+
+}
+
+.imgindex img{
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* Estilo para el boton de inicio de cambio de modo noche */
+.theme-toggle {
+    border: 0;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el menú lateral */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+/* Estilo para el contenido de la publicación */
+.blog-post {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
