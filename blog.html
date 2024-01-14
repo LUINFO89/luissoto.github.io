@@ -1,102 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog</title>
-    <!-- Enlace a los estilos de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog</title>
+  <!-- Enlace a los estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="bg-dark text-white py-4">
-        <nav class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Hola</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blogs</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="mentorias.html">Mentorias</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="cursos.html">Cursos</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="sobremi.html">Sobre Mí</a></li>
+  <header class="bg-dark text-white py-4">
+    <nav class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Hola</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="blog.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="mentorias.html">Mentorias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="cursos.html">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="sobremi.html">Sobre Mí</a>
+        </li>
 
-                <button id="modoNocturnoBtn" class="theme-toggle"><svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 14.0001C9.99997 13.0093 10.2453 12.034 10.7141 11.1611C11.1829 10.2883 11.8605 9.54507 12.6865 8.99791C13.5125 8.45076 14.4611 8.11667 15.4477 8.02547C16.4342 7.93428 17.428 8.08881 18.3403 8.47529C19.2526 8.86176 20.055 9.46814 20.6758 10.2403C21.2967 11.0124 21.7166 11.9263 21.8982 12.9003C22.0798 13.8743 22.0174 14.8781 21.7165 15.8221C21.4156 16.766 20.8856 17.6208 20.1739 18.3101C19.9709 18.5061 19.8149 18.7101 19.7209 18.9291L18.9589 20.698C18.9202 20.7877 18.8562 20.8641 18.7746 20.9177C18.693 20.9714 18.5975 21 18.4999 21H13.5C13.4022 21.0002 13.3064 20.9717 13.2247 20.918C13.1429 20.8643 13.0787 20.7879 13.04 20.698L12.279 18.9281C12.17 18.6943 12.0161 18.4843 11.826 18.3101C11.2476 17.7512 10.7878 17.0816 10.4741 16.341C10.1604 15.6005 9.99912 14.8044 10 14.0001V14.0001ZM13 22.5C13 22.3674 13.0526 22.2402 13.1464 22.1465C13.2402 22.0527 13.3674 22 13.5 22H18.4999C18.6325 22 18.7597 22.0527 18.8535 22.1465C18.9472 22.2402 18.9999 22.3674 18.9999 22.5C18.9999 22.6326 18.9472 22.7598 18.8535 22.8536C18.7597 22.9473 18.6325 23 18.4999 23L18.2759 23.447C18.1929 23.6131 18.0653 23.7528 17.9074 23.8504C17.7495 23.9481 17.5676 23.9999 17.3819 24H14.6179C14.4323 23.9999 14.2503 23.9481 14.0924 23.8504C13.9345 23.7528 13.8069 23.6131 13.724 23.447L13.5 23C13.3674 23 13.2402 22.9473 13.1464 22.8536C13.0526 22.7598 13 22.6326 13 22.5Z"></path>
-                  </svg></button>
-                  
-            </ul>
+        <button id="modoNocturnoBtn" class="theme-toggle">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 14.0001C9.99997 13.0093 10.2453 12.034 10.7141 11.1611C11.1829 10.2883 11.8605 9.54507 12.6865 8.99791C13.5125 8.45076 14.4611 8.11667 15.4477 8.02547C16.4342 7.93428 17.428 8.08881 18.3403 8.47529C19.2526 8.86176 20.055 9.46814 20.6758 10.2403C21.2967 11.0124 21.7166 11.9263 21.8982 12.9003C22.0798 13.8743 22.0174 14.8781 21.7165 15.8221C21.4156 16.766 20.8856 17.6208 20.1739 18.3101C19.9709 18.5061 19.8149 18.7101 19.7209 18.9291L18.9589 20.698C18.9202 20.7877 18.8562 20.8641 18.7746 20.9177C18.693 20.9714 18.5975 21 18.4999 21H13.5C13.4022 21.0002 13.3064 20.9717 13.2247 20.918C13.1429 20.8643 13.0787 20.7879 13.04 20.698L12.279 18.9281C12.17 18.6943 12.0161 18.4843 11.826 18.3101C11.2476 17.7512 10.7878 17.0816 10.4741 16.341C10.1604 15.6005 9.99912 14.8044 10 14.0001V14.0001ZM13 22.5C13 22.3674 13.0526 22.2402 13.1464 22.1465C13.2402 22.0527 13.3674 22 13.5 22H18.4999C18.6325 22 18.7597 22.0527 18.8535 22.1465C18.9472 22.2402 18.9999 22.3674 18.9999 22.5C18.9999 22.6326 18.9472 22.7598 18.8535 22.8536C18.7597 22.9473 18.6325 23 18.4999 23L18.2759 23.447C18.1929 23.6131 18.0653 23.7528 17.9074 23.8504C17.7495 23.9481 17.5676 23.9999 17.3819 24H14.6179C14.4323 23.9999 14.2503 23.9481 14.0924 23.8504C13.9345 23.7528 13.8069 23.6131 13.724 23.447L13.5 23C13.3674 23 13.2402 22.9473 13.1464 22.8536C13.0526 22.7598 13 22.6326 13 22.5Z">
+            </path>
+          </svg>
+        </button>
+      </ul>
+    </nav>
+  </header>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <h4 id="menu">Menú</h4>
+          <ul>
+            <li><a href="#post1">Ejercicio 1: Suma de Números </a></li>
+            <li><a href="#post2">Ejercicio 2: Factorial de un Número</a></li>
+            <li><a href="#post3">Ejercicio 3: Serie de Fibonacci</a></li>
+            <li><a href="#post4">Ejercicio 4: Números Primos</a></li>
+            <li><a href="#post5">Ejercicio 5: Comprobación de Palíndromos</a></li>
+            <li><a href="#post6">Ejercicio 6: Conversión de Temperatura</a></li>
+            <li><a href="#post7">Ejercicio 7: Cálculo del Área del Círculo</a></li>
+            <li><a href="#post8">Ejercicio 8: Ordenamiento de Números</a></li>
+            <li><a href="#post9">Ejercicio 9: Recuento de Vocales</a></li>
+            <li><a href="#post10">Ejercicio 10: Suma de Dígitos</a></li>
 
-        </nav>
-    </header>
-    <div class="container mt-5 ">
 
-        <div class="row ">
-            <div class="col-md-3 ">
-                <div class="sidebar " >
-                    <h4>Menú</h4>
-                    <ul>
-                        <li><a href="#post1">Título del Blog Post 1</a></li>
-                        <li><a href="#post2">Título del Blog Post 2</a></li>
-                        <li><a href="#post3">Título del Blog Post 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-9 ">
-                <div id="post1" class="blog-post ">
-                    <h2>Título del Blog Post 1</h2>
-                    <p class="blog-meta">Publicado el 15 de Septiembre, 2023</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Egone quaeris, inquit, quid sentiam?
-                    </p>
-                    <a href="#">Leer más</a>
-                </div>
-
-                <div id="post2" class="blog-post">
-                    <h2>Título del Blog Post 2</h2>
-                    <p class="blog-meta">Publicado el 10 de Septiembre, 2023</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Egone quaeris, inquit, quid sentiam?
-                    </p>
-                    <a href="#">Leer más</a>
-                </div>
-
-                <div id="post3" class="blog-post">
-                    <h2>Título del Blog Post 3</h2>
-                    <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Egone quaeris, inquit, quid sentiam?
-                    </p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
+          </ul>
         </div>
+      </div>
+      <div class="col-md-9">
+        <p>
+        <h1>Bienvenido a nuestra plataforma educativa de
+          ejercicios de lógica.</h1> Aquí encontrarás una serie de desafíos
+        divididos en tres niveles: básico, medio y avanzado, junto con
+        diez proyectos prácticos. Nuestro objetivo es ayudarte a
+        fortalecer tus habilidades de resolución de problemas y lógica de
+        programación a través de una colección de ejercicios graduales,
+        desde conceptos fundamentales hasta desafíos más complejos. Cada
+        ejercicio está acompañado de un video explicativo donde abordamos
+        el problema, su solución y estrategias clave para su resolución.
+        Utilizamos un formato interactivo similar a HackerRank para
+        ofrecerte una experiencia de aprendizaje dinámica y efectiva.
+        ¡Sumérgete en nuestros videos, perfecciona tus habilidades y
+        prepárate para enfrentar cualquier desafío de lógica con
+        confianza!
+        </p>
+        <!-- Post  -->
+        <div id="post1" class="blog-post">
+          <h2>Ejercicio 1: Suma de Números</h2>
+          <p class="blog-meta">Publicado el 15 de Septiembre, 2023</p>
+          <p>
+            Descripción: Dados dos números enteros, escribe un programa que calcule la suma de ambos.
+            <br>
+            Entrada de muestra:
+            5 10
+            <br>
+            Salida de muestra:
+            La suma es: 15
+          </p>
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post2" class="blog-post">
+          <h2>Ejercicio 2: Factorial de un Número</h2>
+          <p class="blog-meta">Publicado el 10 de Septiembre, 2023</p>
+          <p>
+            Descripción: Escribe un programa que calcule el factorial de un número entero positivo.
+            Entrada de muestra:
+            <br>
+            4
+            <br>
+            Salida de muestra:
+            <br>
+            El factorial es:
+            24
+
+          </p>
+
+        </div>
+        <!-- Post  -->
+        <div id="post3" class="blog-post">
+          <h2>Ejercicio 3: Serie de Fibonacci</h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 3: Serie de Fibonacci
+            Descripción: Imprime los primeros N términos de la serie de Fibonacci.
+
+            Entrada de muestra:
+            <br>
+            7
+            <br>
+            Salida de muestra:
+            <br>
+            0 1 1 2 3 5 8
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post4" class="blog-post">
+          <h2>Ejercicio 4: Números Primos
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 4: Números Primos
+            Descripción: Encuentra y muestra los números primos menores que un número dado N.
+            <br>
+            Entrada de muestra:
+
+            <br>
+            15
+            <br>
+            Salida de muestra:
+
+            <br> 2 3 5 7 11 13
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post5" class="blog-post">
+          <h2>Ejercicio 5: Comprobación de Palíndromos
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Descripción: Verifica si una cadena dada es un palíndromo o no.
+            <br>
+            Entrada de muestra:
+
+            <br>
+            reconocer
+            <br>
+            Salida de muestra:
+            <br>
+
+            Es un palíndromo.
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post6" class="blog-post">
+          <h2>Ejercicio 6: Conversión de Temperatura
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 6: Conversión de Temperatura
+            Descripción: Convierte grados Celsius a Fahrenheit.
+            <br>
+            Entrada de muestra:
+            <br>
+
+            30
+            <br>
+            Salida de muestra:
+
+            <br>
+            La temperatura en Fahrenheit es: 86
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post7" class="blog-post">
+          <h2>Ejercicio 7: Cálculo del Área del Círculo
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 7: Cálculo del Área del Círculo
+            Descripción: Calcula el área de un círculo dado su radio.
+            <br>
+            Entrada de muestra:
+            <br>
+
+            5
+            <br>
+            Salida de muestra:
+
+            <br>
+            El área del círculo es: 78.54
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post8" class="blog-post">
+          <h2>Ejercicio 8: Ordenamiento de Números
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 8: Ordenamiento de Números
+            Descripción: Ordena una lista de números enteros en orden ascendente.
+            <br>
+            Entrada de muestra:
+
+            <br>
+            5 1 8 3 9
+            <br>
+            Salida de muestra:
+            <br>
+            1 3 5 8 9
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post9" class="blog-post">
+          <h2>Ejercicio 9: Recuento de Vocales
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 9: Recuento de Vocales
+            Descripción: Cuenta el número de vocales en una cadena.
+            <br>
+            Entrada de muestra:
+            <br>
+
+            programacion
+            <br>
+            Salida de muestra:
+            <br>
+            El número de vocales es: 4
+
+          </p>
+        </div>
+        <!-- Post  -->
+        <div id="post10" class="blog-post">
+          <h2>Ejercicio 10: Suma de Dígitos
+          </h2>
+          <p class="blog-meta">Publicado el 5 de Septiembre, 2023</p>
+          <p>
+            Ejercicio 10: Suma de Dígitos
+            Descripción: Calcula la suma de los dígitos de un número entero.
+            <br>
+            Entrada de muestra:
+            <br>
+            12345
+            <br>
+            Salida de muestra:
+            <br>
+            La suma de los dígitos es: 15
+
+          </p>
+        </div>
+        <!-- Post  -->
+
+
+      </div>
+
+      <a href="#menu">
+        <h5>Menú Ejercicios</h5><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVklEQVR4nO2ZLUsEURSGHxWVFQTBIlgs1o0mm8VFLf4M/4Blf4DNbSabYNIimAwGi81iEXT9YpNgEMvCssvAvTDI2XEsM++V88Ap9549c14emAkLTmn2gQMSZgI4BIahjoBJEmMGOM2FiHUOzJIIc8ClESLWFTCPOAvATUGIWLfAIqIsAXclQsS6B5YRYwV4+EOIWF1gFRGaQM9Y8rrkWS/MqJU14MNY7gJoGOfZG+vMOP8E1usKsQF8GUudANOh5+ddxhRwbNx9A62qQ2wDfWOZTvgQUhCE0NMx7vthdmW8GEu0jb5xQSJto+eZCnnPPXgA7I3p+y0I4beDXM8bFbIDvAKPwG5BX5kghBnZrGzmFoKUDSLP0IOI4UbUcCNquBE13IgabkQNN6KGG1HDjajhRtRwI2q4ETXciBpuRA03osa/MdLNhXgiYVrhr7SsNutehhQYAThhHKHaT49hAAAAAElFTkSuQmCC">
+      </a>
+
     </div>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <h5>&copy; 2023 Luis Hernando Soto Mesa</h5>
-            <a href="https://wa.me/3058119573" target="_blank">
-                <button type="button" class="btn btn-primary">Enviar mensaje por WhatsApp</button>
+  </div>
 
-            </a>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <h5>&copy; 2023 Luis Hernando Soto Mesa</h5>
+      <a href="https://wa.me/3058119573" target="_blank">
+        <button type="button" class="btn btn-primary">
+          Enviar mensaje por WhatsApp
+        </button>
+      </a>
+    </div>
+  </footer>
 
-        </div>
-    </footer>
-
-
-    <!-- Enlaces a los scripts de Bootstrap y jQuery (necesarios para Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+JnIsz5d0f6p5ha/j5c5x6v3R5v5u5R5w5t5f5Q5E5z5C5n5U5V5l5m5o5D5f5B5s5M5y5N5E5U5T5R5S5v5X5a5D5e5U5Q5r5D5D5U5U5Q5v5V5E5Z5E5U5T5R5S5v5X5K5E5Z5E5T5S5i5C5T5E5R5I5T5Y5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        // Función para cambiar entre los modos diurno y nocturno
-        function cambiarModo() {
-        const body = document.body;
-        body.classList.toggle('modo-nocturno');
+  <!-- Enlaces a los scripts de Bootstrap y jQuery (necesarios para Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+JnIsz5d0f6p5ha/j5c5x6v3R5v5u5R5w5t5f5Q5E5z5C5n5U5V5l5m5o5D5f5B5s5M5y5N5E5U5T5R5S5v5X5a5D5e5U5Q5r5D5D5U5U5Q5v5V5E5Z5E5U5T5R5S5v5X5K5E5Z5E5T5S5i5C5T5E5R5I5T5Y5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    // Función para cambiar entre los modos diurno y nocturno
+    function cambiarModo() {
+      const body = document.body;
+      body.classList.toggle("modo-nocturno");
     }
 
     // Escucha el evento de clic en el botón y llama a la función cambiarModo
-    document.getElementById('modoNocturnoBtn').addEventListener('click', cambiarModo);
-</script>
-
+    document
+      .getElementById("modoNocturnoBtn")
+      .addEventListener("click", cambiarModo);
+  </script>
 </body>
+
 </html>
